@@ -1,0 +1,207 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    font-family: Verdana;
+}
+
+#chat_container{
+    width: 740px;
+    margin: auto;
+}
+
+#dialog_name{
+    font-weight: bolder;
+    font-size: 24px;
+    color: #727272;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-bottom: 1px solid #e1e1e1;;
+}
+
+.count{
+    padding: 15px;
+    font-size: 12px;
+}
+
+#count_message_label{
+    color: #bfbfbf;
+}
+
+#count_message{
+    color: #686868;
+}
+
+.container{
+    padding: 15px;
+    background-color: #f8f8f8;
+    font-size: 10px;
+    box-shadow: 0 6px 4px -4px  #f1f1f1;
+}
+
+.inner_container{
+    background-color: white;
+    border: 1px solid #e1e1e1;
+}
+
+#messages_inner_container{
+    height: 200px;
+    overflow: hidden;
+}
+
+.message{
+    background: #fafafa;
+    width: 690px;
+}
+
+.section{
+    display: table;
+}
+
+.section:after, .section:before{
+    clear: both;
+}
+
+.avatar_block{
+    background: #fafafa;
+    padding: 15px;
+    float: left;
+}
+
+.avatar{
+    width: 25px;
+    height: 25px;
+}
+
+.message_block{
+    margin-left: 55px;
+    background: white;
+    width: 655px;
+    min-height: 60px;
+}
+
+.message_inner_block{
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #e1e1e1;
+    width: 630px;
+}
+
+.text_block{
+    float: left;
+    width: 80%;
+}
+
+.name_interlocutor{
+    font-weight: bold;
+    font-size: 12px;
+    color: #727272;
+}
+
+.text_message{
+
+}
+
+.datetime_block{
+    float: right;
+    width: 20%;
+}
+
+.datetime_inner_block{
+    float: right;
+}
+
+
+.date_label{
+
+}
+
+.time_label{
+    float: right;
+}
+
+.time_label:before{
+    content: "в ";
+}
+
+.control_panel{
+    float: right;
+}
+
+.control{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.clear { clear: both;  /* Отменяем обтекание */ }
+
+.not_read{
+    background: #fafafa;
+}
+
+#write_container{
+    margin-top: 20px;
+    position: relative;
+}
+
+#writing_text{
+    width: 520px;
+    font-family: Verdana;
+    font-size: 12px;
+    padding: 10px;
+    overflow: auto;
+    height: 80px;
+    background: white;
+    border: 1px solid #e1e1e1;
+}
+
+#count_symbols{
+    padding-top: 5px;
+}
+
+#current_symbol_count:before{
+    content: "Символов: ";
+}
+
+#current_symbol_count:after{
+    content: "/";
+}
+
+#add_place{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+#add_place_label{
+    border-bottom: 1px solid #6a997f;
+    color: #6a997f;
+}
+
+.button_container{
+    position: absolute;
+    width: 147px;
+    right: 0;
+    bottom: 30px;
+    height: 50px;
+}
+
+#send_message{
+    float: left;
+    background: #e2f8df;
+    padding: 15px 30px;
+    color: #4da76b;
+    font-size: 13px;
+    border: 1px solid #9bdbb8;
+    cursor: pointer;
+    box-shadow: 0 6px 4px -4px #c6c7c6;
+    filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
+}
+
+#send_message:hover{
+    background: #c1f3ba;
+}
+
+
+
