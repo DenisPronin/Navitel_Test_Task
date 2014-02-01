@@ -3,10 +3,11 @@ body{
     height: 100%;
     margin-top: 20px;
     font-family: Verdana;
+    line-height: 1.5;
 }
 
 #chat_container{
-    width: 740px;
+    width: 940px;
     margin: auto;
 }
 
@@ -20,7 +21,7 @@ body{
 }
 
 .count{
-    padding: 15px;
+    padding: 25px;
     font-size: 12px;
 }
 
@@ -33,9 +34,9 @@ body{
 }
 
 .container{
-    padding: 15px;
+    padding: 25px;
     background-color: #f8f8f8;
-    font-size: 10px;
+    font-size: 14px;
     box-shadow: 0 6px 4px -4px  #f1f1f1;
 }
 
@@ -45,13 +46,13 @@ body{
 }
 
 #messages_inner_container{
-    height: 200px;
+    height: 570px;
     overflow: hidden;
 }
 
 .message{
     background: #fafafa;
-    width: 690px;
+    width: 890px;
 }
 
 .section{
@@ -64,50 +65,58 @@ body{
 
 .avatar_block{
     background: #fafafa;
-    padding: 15px;
+    padding: 20px 20px;
     float: left;
 }
 
 .avatar{
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
 }
 
 .message_block{
-    margin-left: 55px;
+    margin-left: 86px;
     background: white;
-    width: 655px;
-    min-height: 60px;
+    width: 800px;
+    min-height: 90px;
 }
 
 .message_inner_block{
-    padding: 10px 0 10px 10px;
+    margin: 0 20px;
+    padding: 20px 0;
     border-bottom: 1px solid #e1e1e1;
-    width: 630px;
+    width: 760px;
+    position: relative;
+    height: 50px;
 }
 
 .text_block{
     float: left;
-    width: 80%;
+    width: 635px;
 }
 
 .name_interlocutor{
     font-weight: bold;
     font-size: 12px;
     color: #727272;
+    margin-bottom: 5px;
 }
 
 .text_message{
-
+    color: #777676;
 }
 
 .datetime_block{
     float: right;
-    width: 20%;
+    width: 112px;
+    margin-right: 13px;
 }
 
 .datetime_inner_block{
     float: right;
+    color: #a5abbf;
+    line-height: 1.4;
+    font-size: 12px;
 }
 
 
@@ -123,14 +132,25 @@ body{
     content: "в ";
 }
 
+.recently_time_label:before{
+    content: "";
+}
+
 .control_panel{
-    float: right;
+    /*float: right;*/
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
 }
 
 .control{
     width: 16px;
     height: 16px;
     cursor: pointer;
+}
+
+.edit_button{
+    margin-right: 18px;
 }
 
 .clear { clear: both;  /* Отменяем обтекание */ }
@@ -142,12 +162,14 @@ body{
 #write_container{
     margin-top: 20px;
     position: relative;
+    padding-bottom: 10px;
 }
 
 #writing_text{
-    width: 520px;
+    width: 698px;
     font-family: Verdana;
-    font-size: 12px;
+    font-size: 16px;
+    color: #777676;
     padding: 10px;
     overflow: auto;
     height: 80px;
@@ -157,10 +179,12 @@ body{
 
 #count_symbols{
     padding-top: 5px;
+    color: #a5abbf;
+    font-size: 12px;
 }
 
-#current_symbol_count:before{
-    content: "Символов: ";
+#current_symbol_count{
+    color: #626262;
 }
 
 #current_symbol_count:after{
@@ -169,12 +193,19 @@ body{
 
 #add_place{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 25px;
+    right: 30px;
     text-decoration: none;
 }
 
+#add_place img{
+    border: 0;
+    position: relative;
+    top: 5px;
+}
+
 #add_place_label{
+    font-size: 13px;
     border-bottom: 1px solid #6a997f;
     color: #6a997f;
 }
@@ -182,17 +213,17 @@ body{
 .button_container{
     position: absolute;
     width: 147px;
-    right: 0;
-    bottom: 30px;
+    right: 25px;
+    bottom: 29px;
     height: 50px;
 }
 
 #send_message{
     float: left;
     background: #e2f8df;
-    padding: 15px 30px;
+    padding: 10px 30px;
     color: #4da76b;
-    font-size: 13px;
+    font-size: 16px;
     border: 1px solid #9bdbb8;
     cursor: pointer;
     box-shadow: 0 6px 4px -4px #c6c7c6;
@@ -203,5 +234,8 @@ body{
     background: #c1f3ba;
 }
 
-
+.image_marker{
+    position: relative;
+    top: 5px;
+}
 

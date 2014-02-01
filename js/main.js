@@ -3,6 +3,7 @@ $(document).ready(function(){
         horizrailenabled: false,
         autohidemode: false,
         cursorcolor: "#acb1c4",
-        background: "#f0f1f5"
+        background: "#f0f1f5",
+        cursorborder: '0'
     });
 });
